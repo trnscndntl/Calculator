@@ -22,19 +22,19 @@ namespace Calculator
 
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void one_Click(object sender, EventArgs e)
         {
 
         }
 
         private void button15_Click(object sender, EventArgs e)
         {
-
+            znak.Text = "+";
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            znak.Text = "*";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -42,19 +42,22 @@ namespace Calculator
 
         }
 
-        public double Sum(double a, double b)
+        public static double Sum(double a, double b)
         {
             return a + b;
         }
-        public double Min(double a, double b)
+
+        public static double Min(double a, double b)
         {
             return a - b;
         }
-        public double Umn(double a, double b)
+
+        public static double Umn(double a, double b)
         {
             return a * b;
         }
-        public double Pod(double a, double b)
+
+        public static double Pod(double a, double b)
         {
             if (b == 0)
             {
@@ -64,21 +67,120 @@ namespace Calculator
             {
                 return a / b;
             }
-
         }
-        public double Kor(double a)
+
+        public static double Kor(double a)
         {
-            double result;
-            result = Math.Sqrt(a);
-            return result;
+            return Math.Sqrt(a);
         }
-        public double Kvadr(double a)
+
+        public static double Step(double a, double b)
         {
-            double result;
-            result = Math.Pow(a, 2);
-            return result;
+            return Math.Pow(a, b);
         }
 
+        private void three_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void two_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void one_Click_1(object sender, EventArgs e)
+        {
+        }
+
+        private void four_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void five_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void six_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void seven_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void eight_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nine_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void zero_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clear_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            znak.Text = "";
+        }
+
+        private void equals_Click(object sender, EventArgs e)
+        {
+            double a = int.Parse(textBox1.Text);
+            double b = int.Parse(textBox3.Text);
+            switch (znak.Text)
+            {
+                case "+": textBox2.Text = Sum(a, b).ToString();
+                    break;
+                case "-": textBox2.Text = Min(a, b).ToString();
+                    break;
+                case "*": textBox2.Text = Umn(a, b).ToString();
+                    break;
+                case "/": textBox2.Text = Pod(a, b).ToString();
+                    break;
+                case "^": textBox2.Text = Step(a, b).ToString();
+                    break;
+                case "√": textBox2.Text = Kor(a).ToString();
+                    break;
+                default: break;
+            }
+        }
+
+        private void minus_Click(object sender, EventArgs e)
+        {
+            znak.Text = "-";
+        }
+
+        private void divide_Click(object sender, EventArgs e)
+        {
+            znak.Text = "/";
+        }
+
+        private void sqr_Click(object sender, EventArgs e)
+        {
+            znak.Text = "^";
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void sqrt_Click(object sender, EventArgs e)
+        {
+            znak.Text = "√";
+        }
     }
 }

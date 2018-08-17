@@ -52,6 +52,8 @@
             this.clear = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
+            this.znak = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +70,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("AR BLANCA", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(27, 53);
+            this.textBox1.Location = new System.Drawing.Point(36, 53);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(92, 25);
             this.textBox1.TabIndex = 1;
@@ -80,121 +82,130 @@
             this.two.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("two.BackgroundImage")));
             this.two.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.two.ForeColor = System.Drawing.Color.Black;
-            this.two.Location = new System.Drawing.Point(125, 105);
+            this.two.Location = new System.Drawing.Point(125, 88);
             this.two.Name = "two";
             this.two.Size = new System.Drawing.Size(92, 59);
             this.two.TabIndex = 3;
             this.two.Text = "2";
             this.two.UseVisualStyleBackColor = true;
+            this.two.Click += new System.EventHandler(this.two_Click);
             // 
             // three
             // 
             this.three.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("three.BackgroundImage")));
             this.three.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.three.ForeColor = System.Drawing.Color.Black;
-            this.three.Location = new System.Drawing.Point(223, 105);
+            this.three.Location = new System.Drawing.Point(223, 88);
             this.three.Name = "three";
             this.three.Size = new System.Drawing.Size(92, 59);
             this.three.TabIndex = 4;
             this.three.Text = "3";
             this.three.UseVisualStyleBackColor = true;
+            this.three.Click += new System.EventHandler(this.three_Click);
             // 
             // six
             // 
             this.six.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("six.BackgroundImage")));
             this.six.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.six.ForeColor = System.Drawing.Color.Black;
-            this.six.Location = new System.Drawing.Point(223, 170);
+            this.six.Location = new System.Drawing.Point(223, 153);
             this.six.Name = "six";
             this.six.Size = new System.Drawing.Size(92, 59);
             this.six.TabIndex = 5;
             this.six.Text = "6";
             this.six.UseVisualStyleBackColor = true;
+            this.six.Click += new System.EventHandler(this.six_Click);
             // 
             // five
             // 
             this.five.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("five.BackgroundImage")));
             this.five.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.five.ForeColor = System.Drawing.Color.Black;
-            this.five.Location = new System.Drawing.Point(125, 170);
+            this.five.Location = new System.Drawing.Point(125, 153);
             this.five.Name = "five";
             this.five.Size = new System.Drawing.Size(92, 59);
             this.five.TabIndex = 6;
             this.five.Text = "5";
             this.five.UseVisualStyleBackColor = true;
+            this.five.Click += new System.EventHandler(this.five_Click);
             // 
             // four
             // 
             this.four.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("four.BackgroundImage")));
             this.four.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.four.ForeColor = System.Drawing.Color.Black;
-            this.four.Location = new System.Drawing.Point(27, 170);
+            this.four.Location = new System.Drawing.Point(27, 153);
             this.four.Name = "four";
             this.four.Size = new System.Drawing.Size(92, 59);
             this.four.TabIndex = 7;
             this.four.Text = "4";
             this.four.UseVisualStyleBackColor = true;
+            this.four.Click += new System.EventHandler(this.four_Click);
             // 
             // one
             // 
             this.one.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("one.BackgroundImage")));
             this.one.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.one.ForeColor = System.Drawing.Color.Black;
-            this.one.Location = new System.Drawing.Point(27, 105);
+            this.one.Location = new System.Drawing.Point(27, 88);
             this.one.Name = "one";
             this.one.Size = new System.Drawing.Size(92, 59);
             this.one.TabIndex = 8;
             this.one.Text = "1";
             this.one.UseVisualStyleBackColor = true;
-            this.one.Click += new System.EventHandler(this.button6_Click);
+            this.one.Click += new System.EventHandler(this.one_Click_1);
             // 
             // seven
             // 
             this.seven.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("seven.BackgroundImage")));
             this.seven.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.seven.ForeColor = System.Drawing.Color.Black;
-            this.seven.Location = new System.Drawing.Point(27, 235);
+            this.seven.Location = new System.Drawing.Point(27, 218);
             this.seven.Name = "seven";
             this.seven.Size = new System.Drawing.Size(92, 63);
             this.seven.TabIndex = 9;
             this.seven.Text = "7";
             this.seven.UseVisualStyleBackColor = true;
+            this.seven.Click += new System.EventHandler(this.seven_Click);
             // 
             // eight
             // 
             this.eight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("eight.BackgroundImage")));
             this.eight.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.eight.ForeColor = System.Drawing.Color.Black;
-            this.eight.Location = new System.Drawing.Point(125, 235);
+            this.eight.Location = new System.Drawing.Point(125, 218);
             this.eight.Name = "eight";
             this.eight.Size = new System.Drawing.Size(92, 63);
             this.eight.TabIndex = 10;
             this.eight.Text = "8";
             this.eight.UseVisualStyleBackColor = true;
+            this.eight.Click += new System.EventHandler(this.eight_Click);
             // 
             // nine
             // 
             this.nine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("nine.BackgroundImage")));
             this.nine.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nine.ForeColor = System.Drawing.Color.Black;
-            this.nine.Location = new System.Drawing.Point(223, 235);
+            this.nine.Location = new System.Drawing.Point(223, 218);
             this.nine.Name = "nine";
             this.nine.Size = new System.Drawing.Size(92, 63);
             this.nine.TabIndex = 11;
             this.nine.Text = "9";
             this.nine.UseVisualStyleBackColor = true;
+            this.nine.Click += new System.EventHandler(this.nine_Click);
             // 
             // zero
             // 
             this.zero.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("zero.BackgroundImage")));
             this.zero.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.zero.ForeColor = System.Drawing.Color.Black;
-            this.zero.Location = new System.Drawing.Point(27, 304);
+            this.zero.Location = new System.Drawing.Point(27, 287);
             this.zero.Name = "zero";
-            this.zero.Size = new System.Drawing.Size(288, 48);
+            this.zero.Size = new System.Drawing.Size(288, 65);
             this.zero.TabIndex = 12;
             this.zero.Text = "0";
             this.zero.UseVisualStyleBackColor = true;
+            this.zero.Click += new System.EventHandler(this.zero_Click);
             // 
             // comma
             // 
@@ -235,6 +246,7 @@
             this.minus.TabIndex = 15;
             this.minus.Text = "-";
             this.minus.UseVisualStyleBackColor = false;
+            this.minus.Click += new System.EventHandler(this.minus_Click);
             // 
             // divide
             // 
@@ -248,6 +260,7 @@
             this.divide.TabIndex = 16;
             this.divide.Text = "/";
             this.divide.UseVisualStyleBackColor = false;
+            this.divide.Click += new System.EventHandler(this.divide_Click);
             // 
             // plus
             // 
@@ -276,6 +289,7 @@
             this.equals.TabIndex = 18;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = false;
+            this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
             // sqrt
             // 
@@ -283,12 +297,13 @@
             this.sqrt.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sqrt.BackgroundImage")));
             this.sqrt.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sqrt.ForeColor = System.Drawing.Color.Black;
-            this.sqrt.Location = new System.Drawing.Point(419, 250);
+            this.sqrt.Location = new System.Drawing.Point(419, 304);
             this.sqrt.Name = "sqrt";
             this.sqrt.Size = new System.Drawing.Size(92, 48);
             this.sqrt.TabIndex = 19;
             this.sqrt.Text = "√";
             this.sqrt.UseVisualStyleBackColor = false;
+            this.sqrt.Click += new System.EventHandler(this.sqrt_Click);
             // 
             // sqr
             // 
@@ -296,12 +311,13 @@
             this.sqr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sqr.BackgroundImage")));
             this.sqr.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sqr.ForeColor = System.Drawing.Color.Black;
-            this.sqr.Location = new System.Drawing.Point(419, 304);
+            this.sqr.Location = new System.Drawing.Point(419, 250);
             this.sqr.Name = "sqr";
             this.sqr.Size = new System.Drawing.Size(92, 48);
             this.sqr.TabIndex = 20;
             this.sqr.Text = "х²";
             this.sqr.UseVisualStyleBackColor = false;
+            this.sqr.Click += new System.EventHandler(this.sqr_Click);
             // 
             // clear
             // 
@@ -315,24 +331,44 @@
             this.clear.TabIndex = 21;
             this.clear.Text = "C";
             this.clear.UseVisualStyleBackColor = false;
+            this.clear.Click += new System.EventHandler(this.clear_Click);
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("AR BLANCA", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(223, 53);
+            this.textBox2.Location = new System.Drawing.Point(267, 53);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(92, 25);
             this.textBox2.TabIndex = 22;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("AR BLANCA", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(125, 53);
+            this.textBox3.Location = new System.Drawing.Point(150, 53);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(92, 25);
             this.textBox3.TabIndex = 23;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // znak
+            // 
+            this.znak.AutoSize = true;
+            this.znak.Location = new System.Drawing.Point(134, 59);
+            this.znak.Name = "znak";
+            this.znak.Size = new System.Drawing.Size(10, 13);
+            this.znak.TabIndex = 24;
+            this.znak.Text = " ";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(248, 59);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 13);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "=";
             // 
             // Form1
             // 
@@ -340,6 +376,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(516, 401);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.znak);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.clear);
@@ -396,6 +434,8 @@
         private System.Windows.Forms.Button clear;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label znak;
+        private System.Windows.Forms.Label label3;
     }
 }
 
