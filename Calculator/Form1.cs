@@ -62,6 +62,7 @@ namespace Calculator
             if (b == 0)
             {
                 MessageBox.Show("You cannot divide by 0");
+                return 0;
             }
             else
             {
