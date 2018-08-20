@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculator
 {
-    public partial class Form1 : Form
+    public partial class comma : Form
     {
-        public Form1()
+        public comma()
         {
             InitializeComponent();
         }
@@ -61,14 +61,13 @@ namespace Calculator
         {
             if (b == 0)
             {
-                throw new Exception("Cannot divide by 0");
+                MessageBox.Show("You cannot divide by 0");
             }
             else
             {
                 return a / b;
             }
         }
-
         public static double Kor(double a)
         {
             return Math.Sqrt(a);
@@ -81,51 +80,122 @@ namespace Calculator
 
         private void three_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "3";
+            }
+            else
+            {
+                textBox3.Text += "3";
+            }
         }
 
         private void two_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "2";
+            }
+            else
+            {
+                textBox3.Text += "2";
+            }
         }
 
         private void one_Click_1(object sender, EventArgs e)
         {
+            if (znak.Text == "")
+            {
+                textBox1.Text += "1";
+            }
+            else
+            {
+                textBox3.Text += "1";
+            }
         }
 
         private void four_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "4";
+            }
+            else
+            {
+                textBox3.Text += "4";
+            }
         }
 
         private void five_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "5";
+            }
+            else
+            {
+                textBox3.Text += "5";
+            }
         }
 
         private void six_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "6";
+            }
+            else
+            {
+                textBox3.Text += "6";
+            }
         }
 
         private void seven_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "7";
+            }
+            else
+            {
+                textBox3.Text += "7";
+            }
         }
 
         private void eight_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "8";
+            }
+            else
+            {
+                textBox3.Text += "8";
+            }
         }
 
         private void nine_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "9";
+            }
+            else
+            {
+                textBox3.Text += "9";
+            }
         }
 
         private void zero_Click(object sender, EventArgs e)
         {
-
+            if (znak.Text == "")
+            {
+                textBox1.Text += "0";
+            }
+            else
+            {
+                textBox3.Text += "0";
+            }
         }
 
         private void clear_Click(object sender, EventArgs e)
@@ -135,11 +205,10 @@ namespace Calculator
             textBox3.Clear();
             znak.Text = "";
         }
-
         private void equals_Click(object sender, EventArgs e)
         {
-            double a = int.Parse(textBox1.Text);
-            double b = int.Parse(textBox3.Text);
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox3.Text);
             switch (znak.Text)
             {
                 case "+": textBox2.Text = Sum(a, b).ToString();
@@ -177,10 +246,30 @@ namespace Calculator
         {
 
         }
-
         private void sqrt_Click(object sender, EventArgs e)
         {
             znak.Text = "√";
+        }
+        private void znak_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (znak.Text == "")
+            {
+                textBox1.Text += ".";
+            }
+            else
+            {
+                textBox3.Text += ".";
+            }
         }
     }
 }

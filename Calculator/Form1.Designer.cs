@@ -1,6 +1,6 @@
 ﻿namespace Calculator
 {
-    partial class Form1
+    partial class comma
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(comma));
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.two = new System.Windows.Forms.Button();
@@ -41,7 +41,6 @@
             this.eight = new System.Windows.Forms.Button();
             this.nine = new System.Windows.Forms.Button();
             this.zero = new System.Windows.Forms.Button();
-            this.comma = new System.Windows.Forms.Button();
             this.multiple = new System.Windows.Forms.Button();
             this.minus = new System.Windows.Forms.Button();
             this.divide = new System.Windows.Forms.Button();
@@ -54,6 +53,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.znak = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -207,26 +207,13 @@
             this.zero.UseVisualStyleBackColor = true;
             this.zero.Click += new System.EventHandler(this.zero_Click);
             // 
-            // comma
-            // 
-            this.comma.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.comma.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("comma.BackgroundImage")));
-            this.comma.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comma.ForeColor = System.Drawing.Color.Black;
-            this.comma.Location = new System.Drawing.Point(321, 304);
-            this.comma.Name = "comma";
-            this.comma.Size = new System.Drawing.Size(92, 48);
-            this.comma.TabIndex = 13;
-            this.comma.Text = ",";
-            this.comma.UseVisualStyleBackColor = false;
-            // 
             // multiple
             // 
             this.multiple.BackColor = System.Drawing.Color.Violet;
             this.multiple.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("multiple.BackgroundImage")));
             this.multiple.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.multiple.ForeColor = System.Drawing.Color.Black;
-            this.multiple.Location = new System.Drawing.Point(419, 196);
+            this.multiple.Location = new System.Drawing.Point(321, 250);
             this.multiple.Name = "multiple";
             this.multiple.Size = new System.Drawing.Size(92, 48);
             this.multiple.TabIndex = 14;
@@ -240,7 +227,7 @@
             this.minus.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minus.BackgroundImage")));
             this.minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minus.ForeColor = System.Drawing.Color.Black;
-            this.minus.Location = new System.Drawing.Point(321, 196);
+            this.minus.Location = new System.Drawing.Point(419, 196);
             this.minus.Name = "minus";
             this.minus.Size = new System.Drawing.Size(92, 48);
             this.minus.TabIndex = 15;
@@ -254,7 +241,7 @@
             this.divide.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("divide.BackgroundImage")));
             this.divide.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.divide.ForeColor = System.Drawing.Color.Black;
-            this.divide.Location = new System.Drawing.Point(321, 250);
+            this.divide.Location = new System.Drawing.Point(419, 250);
             this.divide.Name = "divide";
             this.divide.Size = new System.Drawing.Size(92, 48);
             this.divide.TabIndex = 16;
@@ -269,7 +256,7 @@
             this.plus.FlatAppearance.BorderSize = 100;
             this.plus.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.plus.ForeColor = System.Drawing.Color.Black;
-            this.plus.Location = new System.Drawing.Point(419, 142);
+            this.plus.Location = new System.Drawing.Point(321, 196);
             this.plus.Name = "plus";
             this.plus.Size = new System.Drawing.Size(92, 48);
             this.plus.TabIndex = 17;
@@ -283,9 +270,9 @@
             this.equals.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("equals.BackgroundImage")));
             this.equals.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equals.ForeColor = System.Drawing.Color.Black;
-            this.equals.Location = new System.Drawing.Point(321, 142);
+            this.equals.Location = new System.Drawing.Point(326, 142);
             this.equals.Name = "equals";
-            this.equals.Size = new System.Drawing.Size(92, 48);
+            this.equals.Size = new System.Drawing.Size(178, 48);
             this.equals.TabIndex = 18;
             this.equals.Text = "=";
             this.equals.UseVisualStyleBackColor = false;
@@ -311,7 +298,7 @@
             this.sqr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("sqr.BackgroundImage")));
             this.sqr.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sqr.ForeColor = System.Drawing.Color.Black;
-            this.sqr.Location = new System.Drawing.Point(419, 250);
+            this.sqr.Location = new System.Drawing.Point(321, 304);
             this.sqr.Name = "sqr";
             this.sqr.Size = new System.Drawing.Size(92, 48);
             this.sqr.TabIndex = 20;
@@ -351,6 +338,7 @@
             this.textBox3.Size = new System.Drawing.Size(92, 25);
             this.textBox3.TabIndex = 23;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // znak
             // 
@@ -360,6 +348,7 @@
             this.znak.Size = new System.Drawing.Size(10, 13);
             this.znak.TabIndex = 24;
             this.znak.Text = " ";
+            this.znak.Click += new System.EventHandler(this.znak_Click);
             // 
             // label3
             // 
@@ -370,12 +359,27 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "=";
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(375, 358);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(92, 48);
+            this.button1.TabIndex = 26;
+            this.button1.Text = ",";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // comma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(516, 401);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.znak);
             this.Controls.Add(this.textBox3);
@@ -388,7 +392,6 @@
             this.Controls.Add(this.divide);
             this.Controls.Add(this.minus);
             this.Controls.Add(this.multiple);
-            this.Controls.Add(this.comma);
             this.Controls.Add(this.zero);
             this.Controls.Add(this.nine);
             this.Controls.Add(this.eight);
@@ -402,7 +405,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Name = "Form1";
+            this.Name = "comma";
             this.Text = "Calculator";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -423,7 +426,6 @@
         private System.Windows.Forms.Button eight;
         private System.Windows.Forms.Button nine;
         private System.Windows.Forms.Button zero;
-        private System.Windows.Forms.Button comma;
         private System.Windows.Forms.Button multiple;
         private System.Windows.Forms.Button minus;
         private System.Windows.Forms.Button divide;
@@ -436,6 +438,7 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label znak;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button1;
     }
 }
 
